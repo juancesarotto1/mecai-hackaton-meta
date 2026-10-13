@@ -1,0 +1,35 @@
+{
+  "name": "@motormind/xr-experience",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "iwsdk dev up --headed --open",
+    "dev:runtime": "vite --configLoader runner",
+    "dev:status": "iwsdk dev status",
+    "dev:down": "iwsdk dev down",
+    "build": "vite build --configLoader runner",
+    "preview": "vite preview --configLoader runner --mode production",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@iwsdk/core": "1.0.1",
+    "@motormind/engine-core": "workspace:*",
+    "@motormind/engine-kinematics": "workspace:*",
+    "@motormind/engine-schema": "workspace:*",
+    "three": "npm:super-three@0.181.0"
+  },
+  "devDependencies": {
+    "@iwsdk/cli": "1.0.1",
+    "@iwsdk/scene-composition": "1.0.1",
+    "@iwsdk/vite-plugin-dev": "1.0.1",
+    "three-viewport-gizmo": "2.2.0",
+    "typescript": "5.9.3",
+    "vite": "^7.0.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "three": "npm:super-three@0.181.0"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mechanical Kinematics"
+  short_description: "Validate reciprocating engine kinematics"
+  default_prompt: "Use -kinematics to implement and verify an inline-four crank-slider model."

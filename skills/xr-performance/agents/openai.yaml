@@ -1,0 +1,4 @@
+interface:
+  display_name: "XR Performance"
+  short_description: "Profile immersive rendering budgets"
+  default_prompt: "Use -performance to profile and improve the XR frame budget."

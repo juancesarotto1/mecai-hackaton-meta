@@ -1,0 +1,4 @@
+interface:
+  display_name: "Engine Asset Pipeline"
+  short_description: "Validate segmented engine 3D assets"
+  default_prompt: "Use -asset-pipeline to inspect and prepare a segmented engine asset."

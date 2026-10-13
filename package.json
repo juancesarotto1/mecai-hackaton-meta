@@ -1,0 +1,32 @@
+{
+  "name": "motormind-xr",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "dev": "turbo dev --filter=@motormind/web",
+    "dev:web": "pnpm --filter @motormind/web dev",
+    "dev:xr": "pnpm --filter @motormind/xr-experience dev",
+    "build": "turbo build",
+    "typecheck": "turbo typecheck",
+    "test": "vitest run --configLoader runner",
+    "test:watch": "vitest --configLoader runner",
+    "lint": "eslint .",
+    "format:check": "prettier --check .",
+    "quality": "pnpm format:check && pnpm lint && pnpm typecheck && pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "@types/node": "24.10.0",
+    "eslint": "9.39.5",
+    "globals": "17.3.0",
+    "prettier": "3.6.2",
+    "turbo": "2.11.7",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.71.1",
+    "vitest": "5.0.4"
+  }
+}

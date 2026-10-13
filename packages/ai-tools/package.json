@@ -1,0 +1,16 @@
+{
+  "name": "@motormind/ai-tools",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@motormind/command-bus": "workspace:*",
+    "@motormind/engine-schema": "workspace:*",
+    "zod": "4.6.6"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc --noEmit"
+  }
+}

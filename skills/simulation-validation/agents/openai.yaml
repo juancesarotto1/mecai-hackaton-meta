@@ -1,0 +1,4 @@
+interface:
+  display_name: "Simulation Validation"
+  short_description: "Test deterministic simulation behavior"
+  default_prompt: "Use -validation to verify deterministic mechanical simulation invariants."

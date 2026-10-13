@@ -1,0 +1,4 @@
+interface:
+  display_name: "Premium Interface Design"
+  short_description: "Design accessible engineering interfaces"
+  default_prompt: "Use -interface-design to refine an accessible 3D engineering dashboard."

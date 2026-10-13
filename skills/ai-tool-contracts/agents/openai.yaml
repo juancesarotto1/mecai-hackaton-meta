@@ -1,0 +1,4 @@
+interface:
+  display_name: "AI Tool Contracts"
+  short_description: "Define safe typed AI scene tools"
+  default_prompt: "Use -tool-contracts to add a validated scene-control tool."

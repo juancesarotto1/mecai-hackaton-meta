@@ -1,0 +1,4 @@
+interface:
+  display_name: "Secure TypeScript Backend"
+  short_description: "Build secure typed backend endpoints"
+  default_prompt: "Use -typescript-backend to implement a validated server endpoint."

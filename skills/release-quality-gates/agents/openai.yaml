@@ -1,0 +1,4 @@
+interface:
+  display_name: "Release Quality Gates"
+  short_description: "Verify release evidence and quality"
+  default_prompt: "Use -quality-gates to audit a MotorMind XR release candidate."

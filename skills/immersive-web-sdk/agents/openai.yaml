@@ -1,0 +1,4 @@
+interface:
+  display_name: "Immersive Web SDK"
+  short_description: "Build and verify IWSDK experiences"
+  default_prompt: "Use -web-sdk to implement a capability-detected WebXR scene."

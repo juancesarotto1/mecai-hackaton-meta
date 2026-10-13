@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mechanical Disassembly"
+  short_description: "Plan safe mechanical disassembly"
+  default_prompt: "Use -disassembly to validate and execute a reversible removal plan."

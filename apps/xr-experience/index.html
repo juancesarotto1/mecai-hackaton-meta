@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#06090d" />
+    <meta
+      name="description"
+      content="Hands-first immersive mechanical diagnostics lab for Meta VR devices."
+    />
+    <link rel="icon" type="image/svg+xml" href="./icon.svg" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <title>MotorMind XR · Hands-first Lab</title>
+    <style>
+      html,
+      body,
+      #scene-container {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+        background: #06090d;
+      }
+      body {
+        font-family: system-ui;
+        color: white;
+      }
+      .badge {
+        position: fixed;
+        top: 16px;
+        left: 16px;
+        z-index: 2;
+        background: #09121bcc;
+        border: 1px solid #264157;
+        padding: 10px 14px;
+        font: 11px monospace;
+        letter-spacing: 0.08em;
+        pointer-events: none;
+      }
+      .badge b {
+        display: block;
+        color: #4aa9ff;
+        margin-bottom: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="badge">
+      <b>MOTORMIND XR · HANDS-FIRST</b><span>APUNTA Y PELLIZCA PARA COMENZAR</span>
+    </div>
+    <div id="scene-container"></div>
+    <script type="module" src="/src/index.ts"></script>
+  </body>
+</html>
