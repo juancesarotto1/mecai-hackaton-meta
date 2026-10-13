@@ -36,7 +36,7 @@ Further fixes found while verifying:
 
 These steps need the entrant:
 
-1. Put the repository under git, push it to GitHub and enable Pages. `deploy-xr.yml` is ready; another HTTPS host also works.
+1. Done: the public repository is https://github.com/juancesarotto1/mecai-hackaton-meta, and the XR build is live at https://juancesarotto1.github.io/mecai-hackaton-meta/. GitHub Actions `quality` passed on Linux, and the deployed page rendered with no errors in a headless smoke test.
 2. Run the full mission hands-only on a Quest from that URL, seated, and profile frame rate.
 3. Record the under-three-minute video from the device or simulator with `DEMO_SCRIPT.md`.
 4. Complete the placeholders in `SUBMISSION_DRAFT.md` and do the final policy review.

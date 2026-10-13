@@ -23,7 +23,7 @@
 ## Build and access
 
 - [ ] Run `pnpm quality` from a clean install.
-- [ ] Publish `apps/xr-experience/dist` to a public HTTPS URL.
+- [x] Publish `apps/xr-experience/dist` to a public HTTPS URL: https://juancesarotto1.github.io/mecai-hackaton-meta/ (GitHub Pages via `deploy-xr.yml`; headless smoke test passed on the live URL).
 - [ ] Open the final URL in the Quest browser without developer credentials.
 - [ ] Test the URL from a separate account/network.
 - [ ] Record the final build identifier and archive the exact source/lockfile.

@@ -8,7 +8,7 @@ Complete every bracketed field before submission. Do not submit placeholders.
 - **Tagline:** See, diagnose, disassemble, and repair a living engine with your bare hands in an immersive mechanical lab.
 - **Track:** Productivity
 - **Division:** New Experience — entrant confirmation required
-- **Playable HTTPS URL:** `[ADD FINAL URL]`
+- **Playable HTTPS URL:** https://juancesarotto1.github.io/mecai-hackaton-meta/
 - **Public video URL:** `[ADD YOUTUBE OR VIMEO URL]`
 - **Target launch date:** `[ADD DATE]`
 

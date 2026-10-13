@@ -14,6 +14,10 @@ Verified on 2026-10-12 with Node 24.19.0 and pnpm 11.25.0 on Windows.
 - Next.js produced `/`, `/api/ai/respond`, and `/api/realtime/token`.
 - IWSDK/Vite transformed 2,197 modules. `dist/` is 7.1 MB, without Havok WASM or unused UIKit fonts.
 
+## GitHub Actions and live deployment
+
+On the first push, the `quality` workflow passed on `ubuntu-latest`. `deploy-xr-pages` built and published the XR bundle to https://juancesarotto1.github.io/mecai-hackaton-meta/. A headless Chromium smoke test against that live URL found one WebGL canvas, the "BANCO LISTO" badge, and no page errors.
+
 ## XR production smoke test
 
 Headless Chromium against `vite preview` of the production bundle, 1440 × 900: one WebGL canvas, the mission badge reads "BANCO LISTO", no page errors, no failed requests, and no duplicate Three.js warning. Evidence: `docs/evidence/xr-production-desktop.png`.
