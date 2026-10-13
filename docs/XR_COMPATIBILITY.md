@@ -11,6 +11,8 @@ IWSDK packages are pinned at 1.0.1 and the app uses a project manifest, native `
 | Meta XR Simulator      | not tested       | the desktop Meta XR Simulator app is a separate product from IWER                                                          |
 | Meta Quest hardware    | not tested       | requires a physical device and an HTTPS session                                                                            |
 
+The bench scene measures 184 draw calls and about 130k triangles per eye in the emulator; frame time on Quest is still unmeasured.
+
 Emulator results show that the IWSDK input path works end to end. They are not device evidence: tracking quality, comfort, legibility at headset resolution and frame rate still need a Quest.
 
 Official references: [project setup](https://developers.meta.com/vr/documentation/iwsdk/guides/01-project-setup/), [project manifest](https://developers.meta.com/vr/documentation/iwsdk/guides/01a-project-manifest/), [minimal scene](https://developers.meta.com/vr/documentation/iwsdk/guides/01b-minimal-scene/), [custom systems](https://developers.meta.com/vr/documentation/iwsdk/guides/07-custom-systems/).

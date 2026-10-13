@@ -14,6 +14,14 @@ Verified on 2026-10-12 with Node 24.19.0 and pnpm 11.25.0 on Windows.
 - Next.js produced `/`, `/api/ai/respond`, and `/api/realtime/token`.
 - IWSDK/Vite transformed 2,197 modules. `dist/` is 7.1 MB, without Havok WASM or unused UIKit fonts.
 
+## Realistic cutaway bench (second pass)
+
+- Scene and manifest validation: `project.test.ts` still passes, including the new linear fog and ACES tone mapping.
+- IWER emulator, hand input only: all eight console actions plus pause/resume and reset passed on the new scene. Captures confirm parts travelling to the mat, the cylinder 2 callout and the worn-ring highlight (`docs/evidence/xr-emulator-hands-mission.png`).
+- Render statistics measured in the emulated XR session: 184 draw calls and 260,448 triangles across both eyes, 102 meshes. Before merging static geometry and instancing the valvetrain, the same scene used 538 draw calls and 259 meshes.
+- Production bundle at 1920 × 1080: mouse clicks on the projected console buttons advanced "Banco listo" → "Motor en marcha estable" → "Baja compresión en C2" with no page errors (`docs/evidence/xr-production-desktop.png`).
+- A first draft of the geometry merge rendered box and cylinder faces white: face groups were read as material slots. This was fixed and visually re-verified (`docs/evidence/xr-cutaway-closeup.png`).
+
 ## GitHub Actions and live deployment
 
 On the first push, the `quality` workflow passed on `ubuntu-latest`. `deploy-xr-pages` built and published the XR bundle to https://juancesarotto1.github.io/mecai-hackaton-meta/. A headless Chromium smoke test against that live URL found one WebGL canvas, the "BANCO LISTO" badge, and no page errors.

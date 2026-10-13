@@ -9,7 +9,7 @@
       "features": { "handTracking": { "required": true } }
     },
     "input": { "canvasPointerEvents": { "activeDuringXR": true } },
-    "render": { "camera": { "position": [0.2, 1.45, 0.75], "lookAt": [0.2, 1.0, -1.8] } },
+    "render": { "camera": { "position": [0.24, 1.36, 0.7], "lookAt": [0.16, 0.95, -0.85] } },
     "features": { "grabbing": { "useHandPinchForGrab": true } }
   },
   "dev": { "emulator": { "device": "metaQuest3" } }
